@@ -1,6 +1,7 @@
 import React from 'react';
 import Head from 'next/head';
 import { FiCodepen, FiGithub, FiInstagram, FiLinkedin } from 'react-icons/fi';
+import Navbar from '../components/navbar';
 
 export default function Home() {
   return (
@@ -8,12 +9,7 @@ export default function Home() {
       <Head>
         <title>Ana Torres | Dev</title>
       </Head>
-      <nav>
-        <a href="/">Home</a>
-        <a href="/">Work</a>
-        <a href="/">About</a>
-        <a href="/">Contact</a>
-      </nav>
+      <Navbar />
       <div>
         <h1>Ana Torres</h1>
         <span>Front End Developer</span>

@@ -1,11 +1,20 @@
+const colors = require('tailwindcss/colors');
+
 module.exports = {
   purge: ['./src/*/.{js,jsx,ts,tsx}', './public/index.html'],
   darkMode: false, // or 'media' or 'class'
   theme: {
-    extend: {},
+    extend: { transitionDuration: ['hover', 'focus', 'display'] },
+    fontFamily: {
+      sans: ['montserrat', 'ui-sans-serif'],
+      serif: ['fira code', 'ui-serif'],
+    },
     colors: {
       transparent: 'transparent',
       current: 'currentColor',
+      black: colors.black,
+      white: colors.white,
+      gray: colors.trueGray,
       blue: {
         550: '#30C1FF',
         450: '#30FFF3',
