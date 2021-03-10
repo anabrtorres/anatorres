@@ -1,30 +1,35 @@
 import React from 'react';
 import Head from 'next/head';
-import { FiCodepen, FiGithub, FiInstagram, FiLinkedin } from 'react-icons/fi';
 import Navbar from '../components/navbar';
+import HomePage from '../components/home';
+import Skills from '../components/skills';
+import Works from '../components/works';
 
 export default function Home() {
   return (
-    <div>
+    <div className="w-full pb-36">
       <Head>
         <title>Ana Torres | Dev</title>
       </Head>
       <Navbar />
-      <div>
-        <h1>Ana Torres</h1>
-        <span>Front End Developer</span>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat.
-        </p>
-        <FiGithub />
-        <FiLinkedin />
-        <FiCodepen />
-        <FiInstagram />
+      <div className="flex pt-40 pb-10 px-20">
+        <HomePage />
+        <div className="flex w-3/5 justify-around items-center">
+          <p>Desenho</p>
+        </div>
       </div>
-      <div>Desenho</div>
+      <div className="flex pt-28 pb-10 px-20">
+        <Skills />
+        <div className="flex w-3/5 justify-around items-center">
+          <p>Desenho</p>
+        </div>
+      </div>
+      <div className="flex pt-28 pb-10 px-20">
+        <Works />
+        <div className="flex w-3/5 justify-around items-center">
+          <p>Desenho</p>
+        </div>
+      </div>
     </div>
   );
 }

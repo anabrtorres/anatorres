@@ -3,7 +3,7 @@ import React from 'react';
 const Navbar: React.FC = () => {
   return (
     <>
-      <nav className="bg-gray-900 fixed flex w-full justify-between px-10 py-4">
+      <nav className="bg-gray-900 fixed t-0 l-0 flex w-full justify-between py-4 px-20">
         <img src="logo/logo.svg" alt="Logo" className="h-10 w-10" />
         <div className="flex justify-between items-center ">
           <a

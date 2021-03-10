@@ -26,13 +26,19 @@ module.exports = {
         450: '#FFF330',
       },
     },
+    backdropFilter: {
+      none: 'none',
+      blur: 'blur(20px)',
+    },
   },
   variants: {
     extend: {
       animation: ['responsive', 'group-hover', 'hover'],
       display: ['responsive', 'group-hover', 'hover'],
       transitionProperty: ['hover', 'focus'],
+      margin: ['hover', 'focus'],
+      padding: ['hover', 'focus'],
     },
   },
-  plugins: [],
+  plugins: [require('tailwindcss-filters')],
 };
